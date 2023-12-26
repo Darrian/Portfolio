@@ -1,0 +1,53 @@
+html, body {
+    height: 100%;
+    margin:  0;
+    padding: 0;
+}
+
+.background-frontpage {
+    background-image: url('../images\/pexels-alexandre-p-junior-7736062.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    position: relative;
+
+}
+
+.background-frontpage::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+.container {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.center-card {
+    width: 300px;
+    height: 300px;
+    background-color: rgba(58, 19, 58, 0.5);
+    border-radius: 5px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #dbbadb;
+    z-index: 0 ;
+    transition : transform 0.8s ease ;
+}
+
+.container:hover .center-card {
+    transform: scale(1.5);
+}
