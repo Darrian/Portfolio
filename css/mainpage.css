@@ -1,0 +1,25 @@
+html, body {
+    height: 100%;
+    margin:  0;
+    padding: 0;
+}
+
+.background-mainpage {
+    background-image: url('../images\/pexels-alexandre-p-junior-7736062.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    position: relative;
+
+}
+
+.background-mainpage::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
